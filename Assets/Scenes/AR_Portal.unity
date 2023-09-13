@@ -592,6 +592,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   msg: {fileID: 1905416956}
   MyArRaycastNaManager: {fileID: 0}
+  chosenPortal: {fileID: 8058794327697516652, guid: ba82c2ad484f24daab641702ff8a6d10,
+    type: 3}
 --- !u!4 &775961116
 Transform:
   m_ObjectHideFlags: 0
@@ -670,7 +672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 5948928855576784750, guid: 558cc7fda8ffa844793bd3881f424bde,
     type: 3}
-  m_DetectionMode: -1
+  m_DetectionMode: 1
 --- !u!114 &1125729854
 MonoBehaviour:
   m_ObjectHideFlags: 0
