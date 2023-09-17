@@ -114,7 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450716ccd742742d2941d9064207d6d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateInteval: 0.5
+  goodFpsThreshold: 55
+  badFpsThreshold: 25
 --- !u!1 &4794220663363146893
 GameObject:
   m_ObjectHideFlags: 0
