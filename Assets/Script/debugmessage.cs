@@ -10,6 +10,7 @@ using UnityEngine.XR.ARSubsystems;
 public class debugmessage : MonoBehaviour
 {
     public Text msg;
+    public bool placed = false;
 
     public ARRaycastManager MyArRaycastNaManager;
     private ARPlaneManager planemanager;
@@ -32,15 +33,16 @@ public class debugmessage : MonoBehaviour
             bool hitrue =
                 MyArRaycastNaManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon);
 
-            if (hitrue)
+            if (hitrue && placed == false)
             {
                 ARRaycastHit hit = hits[0];
                 
                 ARPlane plane = planemanager.GetPlane(hit.trackableId);
                 msg.text = plane.transform.position + " " + plane.transform.rotation + " " + plane.name; 
-                Instantiate(chosenPortal, plane.transform.position, plane.transform.rotation);
-                
-                
+                Instantiate(chosenPortal, hit.pose.position, plane.transform.rotation);
+                planemanager.SetTrackablesActive(false);
+                planemanager.enabled = false;
+                placed = true;
             }
 
         }

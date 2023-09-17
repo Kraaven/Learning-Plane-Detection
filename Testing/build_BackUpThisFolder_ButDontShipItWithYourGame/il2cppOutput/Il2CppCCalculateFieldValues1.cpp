@@ -27766,12 +27766,14 @@ struct debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202  : public MonoBeha
 {
 	// UnityEngine.UI.Text debugmessage::msg
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___msg_4;
+	// System.Boolean debugmessage::placed
+	bool ___placed_5;
 	// UnityEngine.XR.ARFoundation.ARRaycastManager debugmessage::MyArRaycastNaManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___MyArRaycastNaManager_5;
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___MyArRaycastNaManager_6;
 	// UnityEngine.XR.ARFoundation.ARPlaneManager debugmessage::planemanager
-	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___planemanager_6;
+	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___planemanager_7;
 	// UnityEngine.GameObject debugmessage::chosenPortal
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___chosenPortal_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___chosenPortal_8;
 };
 
 // UnityEngine.UI.Dropdown/DropdownItem
@@ -35094,22 +35096,22 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5143[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5144[7] = 
 {
 	static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_Device_4)),static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_PoseSource_5)),static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_PoseProviderComponent_6)),static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_TrackingType_7)),static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_UpdateType_8)),static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_UseRelativeTransform_9)),static_cast<int32_t>(offsetof(TrackedPoseDriver_t5A2DEE7957ED76932DB7460383BF09AB1CB4CCCD, ___m_OriginPose_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5154[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5150[5] = 
 {
-	static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___msg_4)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___MyArRaycastNaManager_5)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___planemanager_6)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___chosenPortal_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5155[2] = 
+	static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___msg_4)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___placed_5)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___MyArRaycastNaManager_6)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___planemanager_7)),static_cast<int32_t>(offsetof(debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202, ___chosenPortal_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5151[2] = 
 {
 	static_cast<int32_t>(offsetof(SceneTemplate_RotateCube_tB6D99CC88F0E89517A2E6E071F0334FE69FB44CC, ___rotateSpeed_4)),static_cast<int32_t>(offsetof(SceneTemplate_RotateCube_tB6D99CC88F0E89517A2E6E071F0334FE69FB44CC, ___objectRotation_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5156[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5152[3] = 
 {
 	static_cast<int32_t>(offsetof(U3CShowFPSU3Ed__11_tFD6B6D1317E74BEAD28821416C089DD169A4F87E, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CShowFPSU3Ed__11_tFD6B6D1317E74BEAD28821416C089DD169A4F87E, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CShowFPSU3Ed__11_tFD6B6D1317E74BEAD28821416C089DD169A4F87E, ___U3CU3E4__this_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5157[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5153[7] = 
 {
 	static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___goodFpsThreshold_4)),static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___badFpsThreshold_5)),static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___updateInteval_6)),static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___textOutput_7)),static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___deltaTime_8)),static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___milliseconds_9)),static_cast<int32_t>(offsetof(DisplayFPS_tB2671F457B1DC5EEA4D6AC9F8FF6E60CC0E2151C, ___framesPerSecond_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5158[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5154[3] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5159[15] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5155[15] = 
 {
 	static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___flickeringLight_4)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___flickeringRenderer_5)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___flickerMode_6)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___lightIntensityMin_7)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___lightIntensityMax_8)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___flickerDuration_9)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___intensityCurve_10)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___m_FlickeringMaterial_11)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___m_EmissionColor_12)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___m_Timer_13)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3, ___m_FlickerLightIntensity_14)),static_cast<int32_t>(offsetof(LightFlicker_t151A8B05FD12296BEF74556388E7669BBCB62AA3_StaticFields, ___k_EmissionColorID_15)),0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5161[3] = 

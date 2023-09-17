@@ -23,6 +23,10 @@ struct VirtualActionInvoker1
 	}
 };
 
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.BoundedPlane,System.Object>
+struct ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D;
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<UnityEngine.XR.ARSubsystems.XRPlaneSubsystem,UnityEngine.XR.ARSubsystems.XRPlaneSubsystemDescriptor,UnityEngine.XR.ARSubsystems.XRPlaneSubsystem/Provider,UnityEngine.XR.ARSubsystems.BoundedPlane,UnityEngine.XR.ARFoundation.ARPlane>
+struct ARTrackableManager_5_t1F9F85442D84B92DE0BC4C518768C0154AB69103;
 // System.Action`1<UnityEngine.XR.ARFoundation.ARPlaneBoundaryChangedEventArgs>
 struct Action_1_t762BEDF03B3FAD9E52246AF6B4291030B8085074;
 // System.Action`1<UnityEngine.XR.ARFoundation.ARPlanesChangedEventArgs>
@@ -127,6 +131,8 @@ struct ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3;
 struct ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0;
 // UnityEngine.AnimationCurve
 struct AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354;
+// UnityEngine.Behaviour
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 // UnityEngine.Canvas
 struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
 // UnityEngine.CanvasRenderer
@@ -237,6 +243,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral94977AFD77070B75DDC5B51FB956A4F7FC1BCC1D
 IL2CPP_EXTERN_C String_t* _stringLiteralB92EF51E45166C91E2762DB6C9F27C8BD6EBE466;
 IL2CPP_EXTERN_C String_t* _stringLiteralC29A24DBA1B3B76E82852C9F0DA8E1C6CAB9A274;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB0BB5D4FA59FF963FDE2494755AB4182D0F8AA2;
+IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_SetTrackablesActive_mA9156D2D519E56D0AC7D9936DC844885876860D1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m60A1B193FDBBFB3719065622DB5E0BB21CA4ABDC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928_m4DD4524FEBE1A17944EDB9D9B369CEE40F0CD12E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44_m77634146E9AE333BE0BCEEC545F76E1784D96F7B_RuntimeMethod_var;
@@ -1784,12 +1791,14 @@ struct debugmessage_t71F32588D9AC5A445F6EF57268C57423199BD202  : public MonoBeha
 {
 	// UnityEngine.UI.Text debugmessage::msg
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___msg_4;
+	// System.Boolean debugmessage::placed
+	bool ___placed_5;
 	// UnityEngine.XR.ARFoundation.ARRaycastManager debugmessage::MyArRaycastNaManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___MyArRaycastNaManager_5;
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___MyArRaycastNaManager_6;
 	// UnityEngine.XR.ARFoundation.ARPlaneManager debugmessage::planemanager
-	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___planemanager_6;
+	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___planemanager_7;
 	// UnityEngine.GameObject debugmessage::chosenPortal
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___chosenPortal_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___chosenPortal_8;
 };
 
 // UnityEngine.XR.ARFoundation.ARTrackableManager`5<UnityEngine.XR.ARSubsystems.XRPlaneSubsystem,UnityEngine.XR.ARSubsystems.XRPlaneSubsystemDescriptor,UnityEngine.XR.ARSubsystems.XRPlaneSubsystem/Provider,UnityEngine.XR.ARSubsystems.BoundedPlane,UnityEngine.XR.ARFoundation.ARPlane>
@@ -2602,6 +2611,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m6B5722DD0A8C0D3D4A1656C5A5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARRaycastHit_tB32B5606815B8A7DF479C00187A852F8D20E3B70 List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F_gshared (List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* __this, int32_t ___index0, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m2A2DD50EC8EB54C91AF71E02DFD6969174D82B08_gshared (RuntimeObject* ___original0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation2, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.BoundedPlane,System.Object>::SetTrackablesActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetTrackablesActive_mD5DB5393ACA16C766508D8A44A2F604D9EE7D79D_gshared (ARTrackableManager_5_tCF3716950AB6E762DC60917DB4A4A6214010074D* __this, bool ___active0, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponentInChildren<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 
@@ -2653,11 +2664,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Quaternion_ToString_mC5BD5DEF60FCA4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0 (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
+// UnityEngine.Pose UnityEngine.XR.ARFoundation.ARRaycastHit::get_pose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ARRaycastHit_get_pose_m84C13E71E21FE12CBA9AAD98DC28B1E414C9EFFD (ARRaycastHit_tB32B5606815B8A7DF479C00187A852F8D20E3B70* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<UnityEngine.GameObject>(T,UnityEngine.Vector3,UnityEngine.Quaternion)
 inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___original0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation2, const RuntimeMethod* method)
 {
 	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m2A2DD50EC8EB54C91AF71E02DFD6969174D82B08_gshared)(___original0, ___position1, ___rotation2, method);
 }
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<UnityEngine.XR.ARSubsystems.XRPlaneSubsystem,UnityEngine.XR.ARSubsystems.XRPlaneSubsystemDescriptor,UnityEngine.XR.ARSubsystems.XRPlaneSubsystem/Provider,UnityEngine.XR.ARSubsystems.BoundedPlane,UnityEngine.XR.ARFoundation.ARPlane>::SetTrackablesActive(System.Boolean)
+inline void ARTrackableManager_5_SetTrackablesActive_mA9156D2D519E56D0AC7D9936DC844885876860D1 (ARTrackableManager_5_t1F9F85442D84B92DE0BC4C518768C0154AB69103* __this, bool ___active0, const RuntimeMethod* method)
+{
+	((  void (*) (ARTrackableManager_5_t1F9F85442D84B92DE0BC4C518768C0154AB69103*, bool, const RuntimeMethod*))ARTrackableManager_5_SetTrackablesActive_mD5DB5393ACA16C766508D8A44A2F604D9EE7D79D_gshared)(__this, ___active0, method);
+}
+// System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___value0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_deltaTime()
@@ -2765,16 +2785,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void debugmessage_Start_mA8F0493FC38AC99A51F1
 		NullCheck(L_1);
 		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_2;
 		L_2 = GameObject_GetComponent_TisARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44_m77634146E9AE333BE0BCEEC545F76E1784D96F7B(L_1, GameObject_GetComponent_TisARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44_m77634146E9AE333BE0BCEEC545F76E1784D96F7B_RuntimeMethod_var);
-		__this->___MyArRaycastNaManager_5 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___MyArRaycastNaManager_5), (void*)L_2);
+		__this->___MyArRaycastNaManager_6 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___MyArRaycastNaManager_6), (void*)L_2);
 		// planemanager = GameObject.Find("AR Session Origin").GetComponent<ARPlaneManager>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = GameObject_Find_mFF1D6C65A7E2CD82443F4DCE4C53472FB30B7F51(_stringLiteral773C10AC7B2C7AFBFDA64607526E4F567D903BA2, NULL);
 		NullCheck(L_3);
 		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_4;
 		L_4 = GameObject_GetComponent_TisARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928_m4DD4524FEBE1A17944EDB9D9B369CEE40F0CD12E(L_3, GameObject_GetComponent_TisARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928_m4DD4524FEBE1A17944EDB9D9B369CEE40F0CD12E_RuntimeMethod_var);
-		__this->___planemanager_6 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___planemanager_6), (void*)L_4);
+		__this->___planemanager_7 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___planemanager_7), (void*)L_4);
 		// }
 		return;
 	}
@@ -2785,6 +2805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void debugmessage_Update_m6684DA7328E1E40A8CA
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARTrackableManager_5_SetTrackablesActive_mA9156D2D519E56D0AC7D9936DC844885876860D1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m6B5722DD0A8C0D3D4A1656C5A5E8D0A784DC85B9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t0754071572EFE7A5C92A59495D2524FC935364E3_il2cpp_TypeInfo_var);
@@ -2810,7 +2831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void debugmessage_Update_m6684DA7328E1E40A8CA
 		L_0 = Input_get_touchCount_m7B8EAAB3449A6DC2D90AF3BA36AF226D97C020CF(NULL);
 		if ((((int32_t)L_0) <= ((int32_t)0)))
 		{
-			goto IL_00d7;
+			goto IL_0102;
 		}
 	}
 	{
@@ -2821,7 +2842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void debugmessage_Update_m6684DA7328E1E40A8CA
 		V_0 = L_1;
 		// bool hitrue =
 		//     MyArRaycastNaManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon);
-		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_2 = __this->___MyArRaycastNaManager_5;
+		ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* L_2 = __this->___MyArRaycastNaManager_6;
 		Touch_t03E51455ED508492B3F278903A0114FA0E87B417 L_3;
 		L_3 = Input_GetTouch_m37572A728DAE284D3ED1272690E635A61D167AD4(0, NULL);
 		V_1 = L_3;
@@ -2831,87 +2852,90 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void debugmessage_Update_m6684DA7328E1E40A8CA
 		NullCheck(L_2);
 		bool L_6;
 		L_6 = ARRaycastManager_Raycast_mF56A1E2D7CBB61131E4D844ADA9D0CC1F6B53EAC(L_2, L_4, L_5, 1, NULL);
-		// if (hitrue)
+		// if (hitrue && placed == false)
 		if (!L_6)
 		{
-			goto IL_00d7;
+			goto IL_0102;
+		}
+	}
+	{
+		bool L_7 = __this->___placed_5;
+		if (L_7)
+		{
+			goto IL_0102;
 		}
 	}
 	{
 		// ARRaycastHit hit = hits[0];
-		List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* L_7 = V_0;
-		NullCheck(L_7);
-		ARRaycastHit_tB32B5606815B8A7DF479C00187A852F8D20E3B70 L_8;
-		L_8 = List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F(L_7, 0, List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F_RuntimeMethod_var);
-		V_2 = L_8;
+		List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* L_8 = V_0;
+		NullCheck(L_8);
+		ARRaycastHit_tB32B5606815B8A7DF479C00187A852F8D20E3B70 L_9;
+		L_9 = List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F(L_8, 0, List_1_get_Item_m443F0D48247776D4257E06597AF794BCF6D8020F_RuntimeMethod_var);
+		V_2 = L_9;
 		// ARPlane plane = planemanager.GetPlane(hit.trackableId);
-		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_9 = __this->___planemanager_6;
-		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_10;
-		L_10 = ARRaycastHit_get_trackableId_m4E510F2C326AFF23086203E4241C8F9B293616C3((&V_2), NULL);
-		NullCheck(L_9);
-		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_11;
-		L_11 = ARPlaneManager_GetPlane_m49FC33F6BC0DCFE67C4FC5F5CEE99CC8A7036FAE(L_9, L_10, NULL);
-		V_3 = L_11;
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_10 = __this->___planemanager_7;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_11;
+		L_11 = ARRaycastHit_get_trackableId_m4E510F2C326AFF23086203E4241C8F9B293616C3((&V_2), NULL);
+		NullCheck(L_10);
+		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_12;
+		L_12 = ARPlaneManager_GetPlane_m49FC33F6BC0DCFE67C4FC5F5CEE99CC8A7036FAE(L_10, L_11, NULL);
+		V_3 = L_12;
 		// msg.text = plane.transform.position + " " + plane.transform.rotation + " " + plane.name;
-		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_12 = __this->___msg_4;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_13;
-		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_15 = V_3;
-		NullCheck(L_15);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
-		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_15, NULL);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_13 = __this->___msg_4;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = L_14;
+		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_16 = V_3;
 		NullCheck(L_16);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
-		L_17 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_16, NULL);
-		V_4 = L_17;
-		String_t* L_18;
-		L_18 = Vector3_ToString_m6C24B9F0382D25D75B05C606E127CD14660574EE((&V_4), NULL);
-		NullCheck(L_14);
-		ArrayElementTypeCheck (L_14, L_18);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_18);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_19 = L_14;
-		NullCheck(L_19);
-		ArrayElementTypeCheck (L_19, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = L_19;
-		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_21 = V_3;
-		NullCheck(L_21);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
-		L_22 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_21, NULL);
-		NullCheck(L_22);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_23;
-		L_23 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_22, NULL);
-		V_5 = L_23;
-		String_t* L_24;
-		L_24 = Quaternion_ToString_mC5BD5DEF60FCA4A38924462A5C4440ECFCF934C4((&V_5), NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_16, NULL);
+		NullCheck(L_17);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_17, NULL);
+		V_4 = L_18;
+		String_t* L_19;
+		L_19 = Vector3_ToString_m6C24B9F0382D25D75B05C606E127CD14660574EE((&V_4), NULL);
+		NullCheck(L_15);
+		ArrayElementTypeCheck (L_15, L_19);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_19);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = L_15;
 		NullCheck(L_20);
-		ArrayElementTypeCheck (L_20, L_24);
-		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_24);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_25 = L_20;
-		NullCheck(L_25);
-		ArrayElementTypeCheck (L_25, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
-		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = L_25;
-		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_27 = V_3;
-		NullCheck(L_27);
-		String_t* L_28;
-		L_28 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_27, NULL);
+		ArrayElementTypeCheck (L_20, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
+		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_22 = V_3;
+		NullCheck(L_22);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_22, NULL);
+		NullCheck(L_23);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_24;
+		L_24 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_23, NULL);
+		V_5 = L_24;
+		String_t* L_25;
+		L_25 = Quaternion_ToString_mC5BD5DEF60FCA4A38924462A5C4440ECFCF934C4((&V_5), NULL);
+		NullCheck(L_21);
+		ArrayElementTypeCheck (L_21, L_25);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_25);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = L_21;
 		NullCheck(L_26);
-		ArrayElementTypeCheck (L_26, L_28);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_28);
+		ArrayElementTypeCheck (L_26, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_27 = L_26;
+		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_28 = V_3;
+		NullCheck(L_28);
 		String_t* L_29;
-		L_29 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_26, NULL);
-		NullCheck(L_12);
-		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_12, L_29);
-		// Instantiate(chosenPortal, plane.transform.position, plane.transform.rotation);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30 = __this->___chosenPortal_7;
-		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_31 = V_3;
-		NullCheck(L_31);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32;
-		L_32 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_31, NULL);
-		NullCheck(L_32);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
-		L_33 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_32, NULL);
+		L_29 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_28, NULL);
+		NullCheck(L_27);
+		ArrayElementTypeCheck (L_27, L_29);
+		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_29);
+		String_t* L_30;
+		L_30 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_27, NULL);
+		NullCheck(L_13);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_13, L_30);
+		// Instantiate(chosenPortal, hit.pose.position, plane.transform.rotation);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = __this->___chosenPortal_8;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_32;
+		L_32 = ARRaycastHit_get_pose_m84C13E71E21FE12CBA9AAD98DC28B1E414C9EFFD((&V_2), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = L_32.___position_0;
 		ARPlane_tB2F02248AD4019D141553B25C1B9005913E98EF0* L_34 = V_3;
 		NullCheck(L_34);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
@@ -2921,10 +2945,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void debugmessage_Update_m6684DA7328E1E40A8CA
 		L_36 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_35, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37;
-		L_37 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0(L_30, L_33, L_36, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0_RuntimeMethod_var);
+		L_37 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0(L_31, L_33, L_36, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m2537AA64AEAC12995F52F5B412866556B83CFBE0_RuntimeMethod_var);
+		// planemanager.SetTrackablesActive(false);
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_38 = __this->___planemanager_7;
+		NullCheck(L_38);
+		ARTrackableManager_5_SetTrackablesActive_mA9156D2D519E56D0AC7D9936DC844885876860D1(L_38, (bool)0, ARTrackableManager_5_SetTrackablesActive_mA9156D2D519E56D0AC7D9936DC844885876860D1_RuntimeMethod_var);
+		// planemanager.enabled = false;
+		ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* L_39 = __this->___planemanager_7;
+		NullCheck(L_39);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_39, (bool)0, NULL);
+		// placed = true;
+		__this->___placed_5 = (bool)1;
 	}
 
-IL_00d7:
+IL_0102:
 	{
 		// }
 		return;
